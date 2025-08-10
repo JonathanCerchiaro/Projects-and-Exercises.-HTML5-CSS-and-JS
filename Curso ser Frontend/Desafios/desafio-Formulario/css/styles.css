@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    font-family: "Roboto", sans-serif;
+}
+
+:root {
+    --blue-color: #3a68b7;
+    --white-color: #fff;
+    --padding-form: 5rem 3rem 5rem 3rem;
+    --margim-button: 2rem 0 0 0;
+    --margim-label: 1rem 0;
+    --padding-button: 1rem 2rem;
+}
+
+.form-content {
+    border-left: solid .8rem rgba(9, 43, 100, 0.7);
+}
+
+.bg-centralizer {
+    background-color: var(--blue-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.button-centralizer {
+    display: flex;
+    justify-content: space-between;
+    margin: var(--margim-button);
+}
+
+.bg-form {
+    background-color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    min-width: 60rem; 
+    padding: var(--padding-form);
+    border: none;
+}
+
+.input-form {
+    font-size: 1.6rem;
+    border: solid .1px transparent;
+    border-bottom-color: var(--blue-color);
+    padding: 1rem .2rem;
+    transition: padding-left .1s;
+}
+
+.input-form:focus {
+    outline: 1px solid var(--blue-color);
+    padding-left: .5rem;
+}
+
+.title {
+    color: var(--blue-color);
+    font-size: 3rem;
+    font-weight: 300;
+    padding-top: 1.5rem;
+}
+
+.content-font {
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: var(--margim-label)
+}
+
+.login {
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.link {
+    font-size: 1.2rem;
+}
+
+.btn {
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    padding: var(--padding-button);
+    border-radius: 4px;
+    font-size: 1.6rem;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+
+.centralizer-cadastro{
+    display: flex;
+    align-items: center;
+    margin-right: 9rem;
+}
+
+.cadastrase {
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;   
+    color: var(--blue-color);
+}
