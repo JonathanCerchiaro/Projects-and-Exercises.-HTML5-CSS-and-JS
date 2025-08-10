@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Viaoda+Libre&display=swap');
+ 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: roboto, Viaoda Libre, sans-serif;
+}
+ 
+html, body {
+    font-size: 62.5%;
+    margin: 0 auto;
+    overflow-y: unset;
+}
+ 
+:root {
+    --white-color: #fff;
+    --color-one: #162028;
+    --color-two: #425564;
+    --color-three: #252525;
+    --color-four: #555;
+    --color-five: #0b171f;
+    --color-six: #6f8597;
+    --width-centralizer: 100rem;
+}
+ 
+.header-pag {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-one);
+    width: var(--width-centralizer);
+    margin: auto;
+}
+ 
+.header-title {
+    font-family: Viaoda Libre;
+    font-weight: 400;
+    color: var(--white-color);
+    font-size: 3rem;
+    margin-left: 15rem;
+    padding: 0.5rem;
+}
+ 
+.menu {
+    display: flex;
+    margin-bottom: 1.5rem; 
+}
+ 
+.menu-item {
+    list-style: none;
+    margin-top: 1.5rem;
+}
+ 
+.menu-item a {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+    font-size: 1.5rem;
+    margin: 2.5rem;
+    color: var(--color-two);
+}
+ 
+
+ 
+.background-img-principal {
+    background-image: url(../imagens/topo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: var(--width-centralizer);
+    height: 50rem;
+    margin: auto;
+}
+ 
+.main-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ 
+#main-title {
+    font-family:  Viaoda Libre, roboto, sans-serif;
+    font-size: 4.0rem;
+    font-weight: 400;
+    color: var(--color-three);
+    margin-top: 10rem;
+    margin-bottom: 2.5rem;
+}
+ 
+#page-description {
+    color: var(--color-four);
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    line-height: 2;  
+    text-align: center;
+    max-width: 100ch;
+}
+ 
+.models {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 9rem;
+    gap: 3rem;
+}
+ 
+.model {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+ 
+.model-title {
+    margin: 1rem;
+    font-size: 2rem;
+    color: var(--color-four);
+    text-transform: uppercase;
+}
+ 
+.model-description {
+    font-size: 1.6rem;
+    color: var(--color-four);
+    font-weight: 400;
+    margin-bottom: 8rem;
+}
+ 
+#background {
+    margin-top: 7.5rem;
+    background-image: url(../imagens/bg_detalhe.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: var(--width-centralizer);
+    height: 50rem;
+    margin: auto;
+}
+
+#background-title {
+    font-size: 4rem;
+    font-family:  Viaoda Libre, roboto, sans-serif;
+}
+ 
+#background-description {
+    font-size: 1.6rem;
+}
+ 
+#background-title {
+    font-weight: 400;
+    font-family:  Viaoda Libre, roboto, sans-serif;
+    color: var(--white-color);
+    padding-top: 10rem;
+    padding-left: 10rem;
+}
+ 
+#background-description {
+    color: var(--white-color);
+    padding-top: 3.5rem;
+    padding-left: 10rem;
+    max-width: 75ch;
+}
+ 
+.end-p {
+    padding: 2.5rem;
+    font-size: 1.2rem;
+    color:var(--color-six);
+    letter-spacing: 0.4rem;
+}
+ 
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-five);
+    width: var(--width-centralizer);
+    margin: auto;
+}

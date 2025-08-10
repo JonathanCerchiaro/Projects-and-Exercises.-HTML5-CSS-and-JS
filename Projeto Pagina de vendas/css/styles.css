@@ -1,0 +1,115 @@
+body {
+    background-color: #0c1014;
+    color: white;
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+.center-title {
+    font-size: 62px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 46px 0;
+    letter-spacing: 2px; /*É utilizado para colocar espaçamento entre as letras de alguma escrita*/
+}
+
+.pag-superior {
+    display: flex;
+    background-color: #05080a;
+    padding: 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-header-h2 {
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-left: 16px;
+}
+
+.navegation-list-container {
+    display: flex;
+    list-style-type: none;
+    font-size: 18px;
+    gap: 16px;
+}
+
+.navegation-list-container a {
+    color: white;
+    text-decoration: none;
+    padding: 14px;
+    border-radius: 6px;
+}
+
+.navegation a:hover {
+    text-decoration: underline;
+}
+
+a.header__nav--active {
+    background-color: #cbe300;
+    color: #0c1014;
+    pointer-events: none; /* Esse código serve para dizer pro browser que não precisa colocar o evento de ponteiro ao passar o mouse por cima */
+}
+
+.pricing {
+    display: flex;
+    gap: 16px;
+}
+
+.card-container {
+    flex-grow: 1;
+    background-color: #1f262c;
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0 5px 15px -6px black;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    text-transform: uppercase;
+    border-bottom: 2px solid #cbe300;
+    margin-top: 0;
+    padding-bottom: 10px;
+    letter-spacing: 2px; /*É utilizado para colocar espaçamento entre as letras de alguma escrita*/
+}
+
+.card-content p {
+    margin-top: 0;
+}
+
+.card-price {
+    font-size: 34px;
+}
+
+.card-list {
+    margin: 0 0 35px 0;
+    color: #b5b5b5;
+    padding-left: 16px;
+    line-height: 1.8; /*A propriedade line-height serve para mexer na altura da linha colocando um espaçamento como se fosse uma margin entre os elementos */
+    flex-grow: 1;
+}
+
+.card-list li::marker {
+    color: #cbe300;  /* A pseudo-classe ::marker no CSS é usada para estilizar os marcadores de listas, ou seja, a bolinha, número ou símbolo que aparece antes de cada item de uma <ul> ou <ol>. */
+}
+
+.card-cta {
+    text-decoration: none;
+    color: #0c1014;
+    background-color: #cbe300;
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 16px 10px;
+    text-align: center;
+}
+
+.card-cta:hover {
+    outline: 2px solid #cbe300;
+    background-color: transparent;
+    color: white;
+}
