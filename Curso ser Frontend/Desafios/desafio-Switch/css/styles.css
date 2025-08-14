@@ -2,7 +2,6 @@
   --switch-color: #cfd8dc;
   --switch-circle: #213e9b54;
   --time: .2s;
-  cursor: pointer;
 }
 
 .switch span {
