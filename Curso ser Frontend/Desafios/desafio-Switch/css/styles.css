@@ -1,0 +1,59 @@
+.switch {
+  --switch-color: #cfd8dc;
+  --switch-circle: #213e9b54;
+  --time: .2s;
+  cursor: pointer;
+}
+
+.switch span {
+    display: inline-block;
+    width: 2em;
+    height: 1em;
+    border-radius: 1em;
+    outline: 2px solid var(--switch-color);
+    overflow: hidden;
+    position: relative;
+}
+
+.switch span::after {
+  content: '';
+  display: block;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  background-color: var(--switch-circle);
+  transition: transform var(--time) ease-in-out;
+  transform: translateX(0);
+  
+}
+
+.switch input:checked + span::after {
+  transform: translateX(100%);
+}
+
+.switch span::before {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-color: var(--switch-color);
+  transform: translateX(-100%);
+  transition: transform var(--time) ease-in-out;
+  position: absolute;
+  z-index: 0;
+}
+
+.switch input:checked + span::before {
+  transform: translateX(0);
+}
+
+/* Esconder o checkbox */
+.switch input[type="checkbox"] {
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  position: absolute;
+  outline: none;
+}
