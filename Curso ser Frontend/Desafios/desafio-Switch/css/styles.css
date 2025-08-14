@@ -57,3 +57,11 @@
   position: absolute;
   outline: none;
 }
+
+/* Acessibilidade podendo utilizar a tecla 
+tab para navegar no switch e colocar marcação */
+
+.switch input:focus + span {
+  outline: 2px solid black;
+  outline-offset: 2px;
+}
